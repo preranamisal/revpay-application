@@ -32,31 +32,6 @@ public class AuthDAO {
         }
     }
 
-    // LOGIN USER
-//    public User login(String email, String password) throws Exception {
-//
-//        String sql = "SELECT * FROM users WHERE email = ? AND password = ?";
-//
-//        try (Connection con = DBConnection.getConnection();
-//             PreparedStatement ps = con.prepareStatement(sql)) {
-//
-//            ps.setString(1, email);
-//            ps.setString(2, password);
-//
-//            ResultSet rs = ps.executeQuery();
-//
-//            if (rs.next()) {
-//                User user = new User();
-//                user.setId(rs.getInt("id"));
-//                user.setName(rs.getString("name"));
-//                user.setEmail(rs.getString("email"));
-//                user.setPhone(rs.getString("phone"));
-//                user.setRole(rs.getString("role"));
-//                return user;
-//            }
-//        }
-//        return null;
-//    }
     
  // AuthDAO.java
     public User getUserByEmail(String email) throws Exception {

@@ -69,4 +69,13 @@ public void setStatus(String status) {
 	this.status = status;
 }
 
+
+@Override
+public String toString() {
+	return "Invoice [id=" + id + ", businessId=" + businessId + ", customerEmail=" + customerEmail + ", amount="
+			+ amount + ", status=" + status + "]";
+}
+
+
+
 }
